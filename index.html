@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>2G Boys Holiday Grimoire 🎄</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Audio Streams (Track 1 & Track 2) -->
+  <audio id="audio-1" loop src="cozy-lofi.mp3"></audio>
+  <audio id="audio-2" loop src="hype-festive.mp3"></audio>
+
+  <!-- Warm Game-Quality Canvas World (Pixel Moon, Warm Lamps, Sparse Snow, Bokeh) -->
+  <canvas id="game-canvas"></canvas>
+
+  <!-- Interactive Jarring Real-Face Snowflakes -->
+  <div id="snowflake-layer"></div>
+
+  <!-- Winged Grimoire Entity -->
+  <div id="grimoire-container" class="flying">
+    <div id="grimoire">
+      <div class="wing left-wing"></div>
+      <div class="cover front-cover">
+        <div class="arcane-gem"></div>
+      </div>
+      <div class="pages-block">
+        <div class="message-pane" id="message-pane">
+          <h2 class="flourish-title">MERRY CHRISTMAS</h2>
+          <p class="flourish-subtitle">From the 2G boys of the free land of America 🇺🇸✨</p>
+        </div>
+        <div class="screen-pane" id="screen-pane" style="display: none;">
+          <iframe 
+            id="homealone-iframe"
+            src="https://www.youtube.com/embed/rC_Yg_U2N48?enablejsapi=1" 
+            title="Home Alone" 
+            allow="autoplay; encrypted-media" 
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+      <div class="cover back-cover"></div>
+      <div class="wing right-wing"></div>
+    </div>
+  </div>
+
+  <!-- 1, 2, OFF Music Toggle HUD -->
+  <div class="hud-dock">
+    <button class="track-btn active" data-track="off">OFF</button>
+    <button class="track-btn" data-track="1">1</button>
+    <button class="track-btn" data-track="2">2</button>
+  </div>
+
+  <!-- Cinematic Warm Flash Core -->
+  <div id="flash-core"></div>
+
+  <!-- Yu-Gi-Oh Style Hologram Modal -->
+  <div id="hologram-modal" class="modal-hidden">
+    <div class="holo-card">
+      <div class="holo-foil"></div>
+      <div class="holo-frame-art" id="holo-portrait"></div>
+      <div class="holo-name" id="holo-name">FILLER NAME</div>
+      <div class="holo-rank">★ 2G LEGENDARY CREW ★</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
