@@ -1,0 +1,5 @@
+# One picture file name per line (the file must be in this faces folder).
+# The name shown on the card comes from the file name:  aziz-khan.jpg  ->  Aziz Khan
+# To choose the name yourself, add it after a bar:       aziz-khan.jpg | Aziz K.
+# Lines starting with # are ignored. Use .jpg .jpeg .png .webp or .gif
+matthew-yu.jpg
